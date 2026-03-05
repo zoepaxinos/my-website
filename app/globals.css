@@ -1,3 +1,46 @@
+:root {
+  /* Colors */
+  --color-foreground-base: #1a1916;
+  --color-foreground-subtle: #7b736c;
+  --color-foreground-on-color: #ffffff;
+  --color-background-muted: #fcfbf9;
+  --color-background-tertiary: #eeece6;
+  --color-border-base: #eeece6;
+  --color-button-yellow: #fdffa2;
+
+  /* Typography */
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Rhymes Display', serif;
+  --font-mono: 'Roboto Mono', monospace;
+
+  /* Font Sizes */
+  --text-xs: 14px;
+  --text-body-2: 16px;
+  --text-body-1: 18px;
+  --text-l: 24px;
+  --text-h5: 37px;
+  --text-h3: 62px;
+
+  /* Line Heights */
+  --leading-xs: 20px;
+  --leading-s: 24px;
+  --leading-l: 30px;
+  --leading-h5: 37px;
+  --leading-h3: 56px;
+
+  /* Spacing */
+  --spacing-4: 4px;
+  --spacing-12: 12px;
+  --spacing-20: 20px;
+  --spacing-32: 32px;
+  --spacing-60: 60px;
+
+  /* Radius */
+  --radius-8: 8px;
+  --radius-12: 12px;
+  --radius-16: 16px;
+}
+
 @import "tailwindcss";
 
 :root {
