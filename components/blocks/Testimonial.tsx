@@ -51,7 +51,7 @@ export function Testimonial({
             />
             {video.url && (
               <div className="absolute bottom-[10px] left-[10px]">
-                <Button type="white-blur" size="xs" href={video.url}>
+                <Button variant="white-blur" size="xs" href={video.url}>
                   Watch now
                 </Button>
               </div>

@@ -5,7 +5,7 @@ const buttonVariants = cva(
   'inline-flex items-center justify-center gap-2 font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50',
   {
     variants: {
-      type: {
+      variant: {
         yellow: 'bg-[var(--color-button-yellow)] text-[var(--color-foreground-base)] shadow-[0px_0px_0px_1px_rgba(229,225,146,0.8),0px_1px_2px_rgba(0,0,0,0.2),inset_0px_0.75px_0px_rgba(255,255,255,0.2)] hover:brightness-95',
         dark: 'bg-[var(--color-foreground-base)] text-white shadow-[0px_0px_0px_1px_rgba(0,0,0,0.08),0px_1px_2px_rgba(0,0,0,0.12)] hover:bg-[#2a2924]',
         white: 'bg-white text-[var(--color-foreground-base)] shadow-[0px_0px_0px_1px_rgba(0,0,0,0.08),0px_1px_2px_rgba(0,0,0,0.12)] hover:bg-gray-50',
@@ -21,7 +21,7 @@ const buttonVariants = cva(
       },
     },
     defaultVariants: {
-      type: 'yellow',
+      variant: 'yellow',
       size: 'm',
     },
   }
@@ -34,12 +34,12 @@ export interface ButtonProps
 }
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, type, size, href, children, ...props }, ref) => {
+  ({ className, variant, size, href, children, ...props }, ref) => {
     if (href) {
       return (
         <a
           href={href}
-          className={buttonVariants({ type, size, className })}
+          className={buttonVariants({ variant, size, className })}
         >
           {children}
         </a>
@@ -48,7 +48,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 
     return (
       <button
-        className={buttonVariants({ type, size, className })}
+        className={buttonVariants({ variant, size, className })}
         ref={ref}
         {...props}
       >

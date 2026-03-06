@@ -56,12 +56,12 @@ export function CTA({
         {(primaryCta || secondaryCta) && (
           <div className={`mt-[var(--spacing-32)] flex gap-[var(--spacing-12)] ${isCenter ? 'justify-center' : ''}`}>
             {primaryCta && (
-              <Button type="yellow" size="l" href={primaryCta.href}>
+              <Button variant="yellow" size="l" href={primaryCta.href}>
                 {primaryCta.label}
               </Button>
             )}
             {secondaryCta && (
-              <Button type="outline" size="l" href={secondaryCta.href}>
+              <Button variant="outline" size="l" href={secondaryCta.href}>
                 {secondaryCta.label}
               </Button>
             )}
